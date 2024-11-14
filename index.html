@@ -1,126 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas Akhir Web Dasar - Dicoding</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1 class="nama-web">SEPUTAR TIMNAS</h1>
-            <p class="p-header"> Selamat datang di Seputar Timnas, portal berita terpercaya yang menyajikan informasi terkini seputar Tim Nasional Indonesia. Kami hadir untuk memberikan update harian mengenai perkembangan dunia sepak bola tanah air, mulai dari jadwal pertandingan, hasil terbaru, analisis mendalam, hingga profil pemain dan pelatih. Nikmati berita eksklusif, wawancara dengan bintang lapangan, dan sorotan prestasi Timnas di berbagai ajang, baik di tingkat Asia maupun dunia</p>
-            <nav>
-                <ul>
-                    <li><a href="#berita">Beranda</a></li>
-                    <li><a href="#pemain">Pemain</a></li>
-                    <li><a href="#berita3">Tiket</a></li>
-                    <li><a href="#berita3">Berita</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <main>
-            <div class="content">
-                <article class="artikel1" id="berita">
-                    <img src="img/mees.jpg.webp" alt="">
-                    <h3>Apakah Hilgers & Eliano bisa main buat Timnas Indonesia di bulan Oktober?</h3>
-                    <p>Deadline pendaftaran pemain untuk laga Timnas Indonesia Vs Bahrain dan China bukan pekan depan. Mees Hilgers dan Eliano Reijnders masih punya waktu hingga awal Oktober.</p>
-                    <div class="button">
-                        Baca selengkapnya
-                    </div>
-                </article>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-                <article class="artikel2">
-                    <img src="img/timnas.jpeg" alt="">
-                    <h3>Update Ranking FIFA Timnas Indonesia Hari Ini: Resmi Melesat Drastis, Jauh di Atas Malaysia!</h3>
-                    <p>FIFA mengeluarkan ranking terbaru berdasarkan hasil yang didapat para negara anggota mereka di FIFA Matchday September 2024. Ambil contoh Timnas Indonesia</p>
-                    <div class="button">
-                        Baca selengkapnya
-                    </div>
-                </article>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
 
-                <article class="artikel3" id="berita3">
-                    <img src="img/timnas1.jpg" alt="">
-                    <h3>Poin yang dbutuhkan Timnas Indonesia untuk kejar Vietnam di Ranking FIFA</h3>
-                    <p>FIFA mengeluarkan ranking terbaru berdasarkan hasil yang didapat para negara anggota mereka di FIFA Matchday September 2024. Ambil contoh Timnas Indonesia</p>
-                    <div class="button">
-                        Baca selengkapnya
-                    </div>
-                </article>
-
-                <article class="artikel3" id="pemain">
-                    <img src="img/pemain.jpg" alt="">
-                    <h3>26 Pemain Timnas Indonesia untuk Laga lawan Arab Saudi dan Australia</h3>
-                    <p>Pelatih Shin Tae-yong memanggil 26 pemain untuk dua pertandingan ronde ketiga Kualifikasi Piala Dunia 2026 melawan Arab Saudi dan Australia. Timnas Indonesia bakal lebih dulu bertandang ke Stadion King Abdullah Sports City, Jeddah, untuk melawan Arab Saudi, Kamis (5/9). Setelah itu menjamu Australia di Stadion Utama Gelora Bung Karno, Jakarta, Selasa (10/9).</p>
-                    <div class="button">
-                        Baca selengkapnya
-                    </div>
-                </article>
-            </div>
-
-            <aside>
-                <!-- Dropdown Button -->
-                <div class="dropdown">
-                    <button class="dropdown-button" onclick="tampilkanDropdown()">Event Timnas</button>
-                    <ul id="isi-dropdown" class="dropdown-content">
-                        <li ><a href="https://inside.fifa.com/fifa-world-ranking/men" target="_blank">FIFA Ranking</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(AFC)" target="_blank">World Cup Qualifiers</a></li>
-                        <li><a href="#asiancup">AFC Asian Cup 2027</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/AFC_U-20_Asian_Cup" target="_blank">AFC U-20 Asian Cup</a></li>
-                        <li><a href="https://id.wikipedia.org/wiki/Piala_Asia_U-17_AFC" target="_blank">AFC U-17 Asian Cup</a></li>
-                    </ul>
-                </div>                
-                <div>
-                    <ul class="list-aside">
-                        <li id="fifaranking"><a href="https://inside.fifa.com/fifa-world-ranking/men" target="_blank">FIFA Ranking</a></li>
-                        <img src="img/fifarank.png" alt="">
-                        <li id="wc"><a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(AFC)" target="_blank">World Cup Qualifiers</a></li>
-                        <img src="img/timnas1.jpg" alt="">
-                        <li id="asiancup"><a href="#">AFC Asian Cup 2027</a></li>
-                        <img src="img/timnas2.webp" alt="">
-                        <li id="u20"><a href="https://en.wikipedia.org/wiki/AFC_U-20_Asian_Cup" target="_blank">AFC U-20 Asian Cup</a></li>
-                        <img src="img/afcu20.jpg" alt="">
-                        <li id="u17"><a href="https://id.wikipedia.org/wiki/Piala_Asia_U-17_AFC" target="_blank">AFC U-17 Asian Cup</a></li>
-                        <img src="img/afcu17.jpeg" alt="">
-                    </ul>
-                </div>
-            </aside>
-
-        </main>
-    
-        <footer>
-            <div>
-                <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Layanan</a></li>
-                    <li><a href="#">Tentang</a></li>
-                    <li><a href="#">Ketentuan</a></li>
-                    <li><a href="#">Keamanan</a></li>
-                </ul>
-            </div>
-            <p class="footer1">
-                Seputar Timnas &copy; 2024
-            </p>
-        </footer>
-
-
-<!-- js -->
-<script>
-    function tampilkanDropdown() {
-        const isiDropdown = document.getElementById("isi-dropdown");
-        if (isiDropdown.style.display === "block") {
-            isiDropdown.style.display = "none";
-        } else {
-            isiDropdown.style.display = "block";
-        }
-    }
-</script>
-
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container p-3"> 
+        <a class="navbar-brand" href="#">Yanuario Adimada</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron-->
+    <section class="jumbotron text-center text-light" style="background-color: #0099ff;">
+      <img class="img-fluid rounded-circle img-thumbnail mb-4" width="25%" src="img/profile-mada.jpg" alt="Yanuario Adimada">
+      <h1 class="display-4">Yanuario Adimada</h1>
+      <p class="lead">College Students</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,112C480,128,600,192,720,181.3C840,171,960,85,1080,74.7C1200,64,1320,128,1380,160L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-3"> <!--Maksimal 12 kolom. jadi misal kiri col-3 jadi yang kanan akan mengikuti yaitu col-9 meskipun tdk didefinisikan-->
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-3">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatibus dolores quidem eos beatae hic unde est natus totam quam ipsum, animi autem quis provident.</p>
+          </div>
+          <div class="col-md-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ut quia assumenda eaque quibusdam liriosam dolorum architecto nesciunt reiciendis? Blanditiis.</p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,32L48,37.3C96,43,192,53,288,80C384,107,480,149,576,138.7C672,128,768,64,864,69.3C960,75,1056,149,1152,160C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>    <!-- Akhir About -->
+
+    <!-- Card -->
+    <div id="projects" style="background-color: #0099ff;">
+      <div class="container">
+        <div class="row text-center text-light">
+          <div class="col mb-4">
+            <h2>My Projects</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 pb-3"> <!--Ini kita kasih col-4 (ukuran 4) karena nanti kita akan membuat 3 kolom yang masing masing berukuran 4, total maksimal ukuran kolo yaitu 12--> 
+            <div class="card"> <!--md pada tag col-4 untuk menjadikan web responsive -->
+              <img src="img/fiserv1.jpeg" class="card-img-top" alt="Fiserv Forum">
+              <div class="card-body text-center">
+                <h4>Web Dev #1</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 pb-3"> <!--Ini kita kasih col-4 (ukuran 4) karena nanti kita akan membuat 3 kolom yang masing masing berukuran 4, total maksimal ukuran kolo yaitu 12-->
+            <div class="card"> <!-- md pada tag col-4 untuk menjadikan web responsive -->
+              <img src="img/fiserv1.jpeg" class="card-img-top" alt="Fiserv Forum">
+              <div class="card-body text-center">
+                <h4>Web Dev #2</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"> <!--Ini kita kasih col-4 (ukuran 4) karena nanti kita akan membuat 3 kolom yang masing masing berukuran 4, total maksimal ukuran kolo yaitu 12-->
+            <div class="card"> <!-- md pada tag col-4 untuk menjadikan web responsive -->
+              <img src="img/fiserv1.jpeg" class="card-img-top" alt="Fiserv Forum">
+              <div class="card-body text-center">
+                <h4>Web Dev #3</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+    <!-- Akhir Card -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email">
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Contact -->
+    
+
+    <!-- Footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,122.7C672,128,768,224,864,229.3C960,235,1056,149,1152,112C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <footer class="bg-primary text-white fw-bold text-center">
+      <p class="p-3">Created with love by <a class="text-white" href="https://www.instagram.com/yanuarioadimada/">Yanuario Adimada</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
 </html>
